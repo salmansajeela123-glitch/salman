@@ -1,0 +1,6 @@
+{
+  "name": "Mind & Body",
+  "description": "A calm, private mental and physical wellness companion for daily routines, habit tracking, breathing, movement, and reflection.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

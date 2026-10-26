@@ -1,0 +1,64 @@
+<resources>
+    <string name="app_name">Mind &amp; Body</string>
+
+    <!-- Navigation -->
+    <string name="nav_home">Home</string>
+    <string name="nav_study">Study</string>
+    <string name="nav_mind">Mind</string>
+    <string name="nav_move">Move</string>
+    <string name="nav_progress">Progress</string>
+    <string name="nav_settings">Settings</string>
+
+    <!-- Study & Phone Lock -->
+    <string name="study_title">Study &amp; Focus Lock</string>
+    <string name="study_subtitle">Plan focused study blocks and pin your phone away from distractions.</string>
+    <string name="study_lock_notice">Phone Lock uses Android Screen Pinning and an immersive focus shield to block app-switching and notifications during study time. You can always unlock intentionally if needed.</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_welcome_title">Welcome to Mind &amp; Body</string>
+    <string name="onboarding_welcome_subtitle">Small, steady actions for your mental calm and physical vitality — at your own pace.</string>
+    <string name="onboarding_disclaimer_title">General Wellness, Not Medical Care</string>
+    <string name="onboarding_disclaimer_body">Mind &amp; Body supports everyday routines, reflection, and gentle movement. It does not diagnose, treat, or replace professional medical or mental health care.</string>
+    <string name="onboarding_privacy_note">Private by default: your mood check-ins, journals, and habits stay stored locally on this device.</string>
+    <string name="onboarding_skip">Skip for now</string>
+    <string name="onboarding_continue">Continue</string>
+    <string name="onboarding_start">Begin My Routine</string>
+    <string name="onboarding_name_label">What should we call you? (Optional)</string>
+    <string name="onboarding_goals_title">What feels helpful to focus on?</string>
+    <string name="onboarding_goals_subtitle">Choose one or a few. You can adjust these anytime.</string>
+    <string name="onboarding_prefs_title">Tailor your daily rhythm</string>
+    <string name="onboarding_time_label">Comfortable daily time</string>
+    <string name="onboarding_level_label">Movement comfort level</string>
+
+    <!-- Encouraging Microcopy -->
+    <string name="copy_small_steps">Small steps count. Showing up gently is enough today.</string>
+    <string name="copy_start_again">Missed a day? That is completely normal — you can start again today.</string>
+    <string name="copy_rest_is_valid">Rest days are part of sustainable health, never a setback.</string>
+
+    <!-- Home -->
+    <string name="home_todays_plan">Today\'s Gentle Plan</string>
+    <string name="home_quick_actions">Quick Check-ins</string>
+    <string name="home_daily_habits">Consistent Habits</string>
+    <string name="home_rest_day_toggle">Take a Rest Day</string>
+
+    <!-- Mind -->
+    <string name="mind_title">Mind &amp; Reflection</string>
+    <string name="mind_breathing_disclaimer">Relaxation exercise — designed to help you pause and unwind, not a medical treatment.</string>
+    <string name="mind_reflection_disclaimer">Trends are for personal reflection only and do not represent clinical assessments or prove cause and effect.</string>
+
+    <!-- Move -->
+    <string name="move_title">Movement &amp; Rest</string>
+    <string name="move_safety_banner">Listen to your body: warm up gently, choose low-impact options anytime, and stop immediately if you feel pain, dizziness, chest pain, or unusual shortness of breath. Urgent or severe symptoms warrant medical care.</string>
+    <string name="move_sleep_disclaimer">Approximate routine log for personal awareness — not a medical or clinical sleep measurement.</string>
+    <string name="move_hydration_disclaimer">Hydration needs vary by person, climate, and activity. Adjust your goal to what suits your body.</string>
+
+    <!-- Crisis & Safety -->
+    <string name="crisis_banner_title">You don\'t have to carry this alone</string>
+    <string name="crisis_banner_body">Mind &amp; Body is not a crisis service. If you are in immediate danger or thinking about harming yourself or someone else, please contact your local emergency number (such as 911, 999, or 112), call or text 988 (in the US &amp; Canada), or reach out to a trusted person or local crisis support service right now.</string>
+
+    <!-- Notifications -->
+    <string name="reminder_channel_name">Gentle Wellness Check-in</string>
+    <string name="reminder_channel_desc">Optional daily reminders for mindful pauses and movement</string>
+    <string name="reminder_notification_title">A gentle pause for today</string>
+    <string name="reminder_notification_body">Whenever you have a quiet minute, check in with yourself. Small steps count.</string>
+</resources>
