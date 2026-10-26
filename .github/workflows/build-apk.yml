@@ -1,9 +1,11 @@
-name: Build Android APK
+name: Build MindAndBody APK
 
 on:
   push:
-    branches: [ main, master ]
   workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
   build-apk:
@@ -21,11 +23,14 @@ jobs:
       - name: Set up Android SDK
         uses: android-actions/setup-android@v3
 
-      - name: Accept Android SDK Licenses
-        run: yes | sdkmanager --licenses || true
-
-      - name: Prepare Debug Keystore
+      - name: Install Android SDK 36.1 & Accept Licenses
         run: |
+          yes | sdkmanager --licenses || true
+          sdkmanager "platforms;android-36.1" "build-tools;36.0.0" || true
+
+      - name: Prepare Debug Keystore & Env
+        run: |
+          touch .env
           if [ -f debug.keystore.base64 ]; then
             base64 -d debug.keystore.base64 > debug.keystore
           else
@@ -37,11 +42,22 @@ jobs:
         with:
           gradle-version: '9.3.1'
 
-      - name: Build Signed Debug APK
-        run: gradle assembleDebug --no-daemon
+      - name: Build Signed APK
+        run: |
+          gradle assembleDebug --no-daemon
+          cp app/build/outputs/apk/debug/app-debug.apk MindAndBody.apk
 
-      - name: Upload MindAndBody APK Artifact
+      - name: Upload MindAndBody.apk Artifact
         uses: actions/upload-artifact@v4
         with:
-          name: MindAndBody-apk
-          path: app/build/outputs/apk/debug/app-debug.apk
+          name: MindAndBody-APK
+          path: MindAndBody.apk
+
+      - name: Publish MindAndBody.apk to GitHub Releases
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: v1.0-latest
+          name: Mind & Body Android APK (Latest)
+          files: MindAndBody.apk
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
